@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "iwantwallets": "ts-node src/index.ts"
+    "iwantwallets": "tsx src/index.ts",
+    "swayfarm": "ts-node --esm src/01_fuel_mint_farm.ts"
   },
   "repository": {
     "type": "git",
@@ -20,10 +21,14 @@
   "homepage": "https://github.com/frutian/fuel#readme",
   "devDependencies": {
     "@types/node": "^20.5.0",
+    "tsx": "^4.7.1",
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "2captcha": "^3.0.7",
     "dayjs": "^1.11.9",
-    "fuels": "^0.51.0"
+    "fuels": "^0.51.0",
+    "node-fetch": "^3.3.2",
+    "ts-node": "^10.9.2"
   }
 }
